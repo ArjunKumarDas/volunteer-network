@@ -18,8 +18,9 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).then(function(result) {
-           const {disdplayName, email} = result.user;
-           const signedInUser = {name: disdplayName, email}
+           const {displayName, email} = result.user;
+           const signedInUser = {displayName, email}
+        //    console.log(signedInUser);
            setLoggedInUser(signedInUser);
            history.replace(from);
            
