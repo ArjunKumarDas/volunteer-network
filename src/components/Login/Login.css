@@ -1,0 +1,9 @@
+.login-google{
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: rgba(71, 38, 38, 0);
+}

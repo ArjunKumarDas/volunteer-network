@@ -1,0 +1,31 @@
+.header-part{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-from{
+    margin: auto;
+    padding: 30px;
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: rgba(71, 38, 38, 0);
+}
+.border-bottom{
+  
+    width: 97%;
+    border: none;
+    padding-bottom: 10px;
+    margin-bottom: 5px solid gray;
+ 
+}
+.v-head{
+    margin-bottom: 15px;
+}
+.button {
+    width: 97%;
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+}

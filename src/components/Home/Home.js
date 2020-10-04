@@ -4,6 +4,7 @@ import Event from '../Event/Event';
 import Navbar from '../Navbar/Navbar';
 import eventData from '../../eventData';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const event20 = eventData.slice(0,20);
@@ -24,7 +25,7 @@ const Home = () => {
               </div>
                <div className="">
                        {
-                         events.map(eventItem => <Event eventItem={eventItem}></Event>) 
+                         events.map(eventItem => <Link to="/register"><Event eventItem={eventItem}></Event></Link>) 
                        }
                   
               </div>
