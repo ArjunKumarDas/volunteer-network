@@ -19,6 +19,8 @@
     margin-bottom: 5px solid gray;
  
 }
+
+
 .v-head{
     margin-bottom: 15px;
 }
@@ -28,4 +30,7 @@
     border: none;
     background-color: blue;
     color: white;
+}
+.position{
+  float: left;
 }

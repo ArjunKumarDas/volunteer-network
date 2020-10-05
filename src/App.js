@@ -26,12 +26,12 @@ function App() {
              <Route path="/login">
                  <Login></Login>
              </Route>
-             {/* <PrivateRoute path="/register">
+             <PrivateRoute path="/register">
                  <Registation></Registation>
-             </PrivateRoute> */}
-             <Route path="/register">
+             </PrivateRoute>
+             {/* <Route path="/register">
                  <Registation></Registation>
-             </Route>
+             </Route> */}
              <Route path="/eventTask">
                  <EventTask></EventTask>
              </Route>
