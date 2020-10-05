@@ -11,6 +11,7 @@ import Registation from './components/RegistaionFrom/Registation';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import EventTask from './components/EventTask/EventTask';
+import Admin from './components/Admin/Admin';
 export const UserContext = createContext();
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
              </Route> */}
              <Route path="/eventTask">
                  <EventTask></EventTask>
+             </Route>
+             <Route path="/admin">
+                 <Admin></Admin>
              </Route>
              <Route exact path="/">
                  <Home/>

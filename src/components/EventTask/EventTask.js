@@ -15,9 +15,9 @@ const EventTask = () => {
             <div className="col-md-3 usertask">
                {
                    users.map(user => <div>
-                       <p>Full Name : {user.displayName}</p>
-                       <p>Email : {user.email}</p>
-                       <p>Date : {(new Date(user.setDate).toDateString('DD/MM/YYYY'))}</p>
+                       <div>Full Name : {user.displayName}</div>
+                       <div>Email : {user.email}</div>
+                       <div>Date : {(new Date(user.setDate).toDateString('DD/MM/YYYY'))}</div>
                    </div>)
                }
             </div>

@@ -19,7 +19,7 @@ const Registation = () => {
         newDates.setDate = date
         setSelectedDate(newDates);
     };
-    const registation = () => {
+    const registationBtn = () => {
        const register = {...loggedInUser, ...selectedDate};
        fetch('http://localhost:4000/addUser', {
            method:'POST',
@@ -55,7 +55,7 @@ const Registation = () => {
                         </MuiPickersUtilsProvider></p>
                     <input className="border-bottom" name="name" type="text" placeholder="Desicription" />
                     <p> <input className="border-bottom" name="name" type="text" placeholder="Organize books at the library" /> </p>
-                    <p><Link to="/eventTask"><input onClick={registation} className="button" type="submit" placeholder="Registration" /></Link></p>
+                    <p><Link to="/eventTask"><input onClick={registationBtn} className="button" type="submit" placeholder="Registration" /></Link></p>
 
                 </from>
             </div>

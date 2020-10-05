@@ -26,7 +26,7 @@ const Navbar = () => {
                         <Nav.Link defaultActiveKey="/register" href="/register">Register</Nav.Link>
                     </Nav.Item>
                     <Nav.Item  className="dark">
-                        <Nav.Link defaultActiveKey="/admin">Admin</Nav.Link>
+                        <Nav.Link defaultActiveKey="/admin" href="/admin">Admin</Nav.Link>
                     </Nav.Item>
                 </Nav>
               </div>
