@@ -1,0 +1,70 @@
+[debug] [2020-10-06T06:08:24.677Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T06:08:24.708Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Arjun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-06T06:08:24.709Z] CLI Version:   8.12.0
+[debug] [2020-10-06T06:08:24.710Z] Platform:      win32
+[debug] [2020-10-06T06:08:24.710Z] Node Version:  v12.18.3
+[debug] [2020-10-06T06:08:24.786Z] Time:          Tue Oct 06 2020 12:08:24 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-10-06T06:08:24.787Z] ----------------------------------------------------------------------
+[debug] [2020-10-06T06:08:24.787Z] 
+[debug] [2020-10-06T06:08:24.839Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-06T06:08:24.841Z] > authorizing via signed-in user
+[debug] [2020-10-06T06:08:24.841Z] [iam] checking project volunteer-network-891e7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-06T06:08:24.849Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/volunteer-network-891e7:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-06T06:08:32.098Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 06:08:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=992","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-06T06:08:32.113Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/volunteer-network-891e7  
+ 
+[debug] [2020-10-06T06:08:33.535Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 06:08:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'volunteer-network-891e7'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-06T06:08:33.588Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/volunteer-network-891e7/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-06T06:08:38.129Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 06:08:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[volunteer-network-891e7]: beginning deploy... 
+[info] i  hosting[volunteer-network-891e7]: found 21 files in build 
+[debug] [2020-10-06T06:08:38.221Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-10-06T06:08:39.422Z] [hosting] hash cache [YnVpbGQ] stored for 21 files
+[debug] [2020-10-06T06:08:39.422Z] [hosting][hash queue][FINAL] {"max":1129,"min":75,"avg":164.14285714285714,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":1199}
+[debug] [2020-10-06T06:08:39.423Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/volunteer-network-891e7/versions/0c3dca6f7700dba8:populateFiles  
+ <request body omitted>
+[debug] [2020-10-06T06:08:41.922Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Oct 2020 06:08:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-06T06:08:41.985Z] [hosting][populate queue][FINAL] {"max":2515,"min":2515,"avg":2515,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2566}
+[debug] [2020-10-06T06:08:41.985Z] [hosting] uploads queued: 21
+[debug] [2020-10-06T06:08:51.173Z] [hosting][upload queue][FINAL] {"max":9246,"min":2715,"avg":4298.428571428572,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":9249}
+[info] +  hosting[volunteer-network-891e7]: file upload complete 
+[debug] [2020-10-06T06:08:51.176Z] [hosting] deploy completed after 13043ms
+[debug] [2020-10-06T06:08:52.001Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "volunteer-network-891e7"
+    },
+    "site": "volunteer-network-891e7",
+    "version": "sites/volunteer-network-891e7/versions/0c3dca6f7700dba8"
+  }
+]
+[info] i  hosting[volunteer-network-891e7]: finalizing version... 
+[debug] [2020-10-06T06:08:52.006Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/volunteer-network-891e7/versions/0c3dca6f7700dba8?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-10-06T06:09:09.248Z] Error: socket hang up
+    at connResetException (internal/errors.js:610:14)
+    at TLSSocket.socketOnEnd (_http_client.js:453:23)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:483:12)
+    at endReadableNT (_stream_readable.js:1220:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. socket hang up

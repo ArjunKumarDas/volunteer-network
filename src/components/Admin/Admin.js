@@ -3,7 +3,7 @@ import './Admin.css';
 const Admin = () => {
     const [allUsers, setAllUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/allUser')
+        fetch('https://still-ocean-78588.herokuapp.com/allUser')
         .then(res => res.json())
         .then(data => setAllUsers(data));
       },[])

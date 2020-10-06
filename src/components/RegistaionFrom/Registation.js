@@ -21,7 +21,7 @@ const Registation = () => {
     };
     const registationBtn = () => {
        const register = {...loggedInUser, ...selectedDate};
-       fetch('http://localhost:4000/addUser', {
+       fetch('https://still-ocean-78588.herokuapp.com/addUser', {
            method:'POST',
            headers: {'Content-Type': 'application/json'},
            body: JSON.stringify(register)

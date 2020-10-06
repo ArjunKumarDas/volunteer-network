@@ -6,7 +6,7 @@ const EventTask = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [users, setUsers] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:4000/user?email='+loggedInUser.email)
+      fetch('https://still-ocean-78588.herokuapp.com/user?email='+loggedInUser.email)
       .then(res => res.json())
       .then(data => setUsers(data));
     },[])
